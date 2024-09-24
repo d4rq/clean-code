@@ -5,7 +5,10 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Markdown", "Markdown.csproj", "{960AC09A-EB9E-4FBC-8FAD-D8E0BBF986D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkdownTests", "..\MarkdownTests\MarkdownTests.csproj", "{6347106C-8DC9-4424-898C-CF0286C24FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarkdownTests", "..\MarkdownTests\MarkdownTests.csproj", "{6347106C-8DC9-4424-898C-CF0286C24FB4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{960AC09A-EB9E-4FBC-8FAD-D8E0BBF986D8} = {960AC09A-EB9E-4FBC-8FAD-D8E0BBF986D8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
