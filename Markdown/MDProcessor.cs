@@ -5,8 +5,8 @@ namespace Markdown
 {
     public class MDProcessor
     {
-        public IRenderer renderer = new Renderer();
-        public IParser parser = new Parser();
+        private IRenderer renderer = new Renderer();
+        private IParser parser = new Parser();
 
         public string MdToHTML(string text)
         {
