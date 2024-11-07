@@ -1,14 +1,18 @@
-﻿namespace Markdown.Classes;
+﻿using Markdown.Enums;
 
-public enum Tag
+namespace Markdown.Classes
 {
-    H1,
-    H2,
-    H3,
-    H4,
-    H5,
-    H6,
-    Bold,
-    Italic,
-    BoldItalic
+    public class Tag
+    {
+        public readonly int Position;
+        public readonly Tags Name;
+        public readonly int Length;
+
+        public Tag(Tags name, int position, int length)
+        {
+            Name = name;
+            Position = position;
+            Length = length;
+        }
+    }
 }
